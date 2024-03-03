@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #6280d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main #cards{
+    height: 450px;
+    width: 290px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid black;
+    position: relative;
+    
+}
+
+#cards #storiyan{
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid #cdcbcb;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-top:20px; 
+}
+#cards .disclaimer{
+    padding-top: 100px;
+}
+#cards h2{
+    text-align: center;
+    color: red;
+}
+#cards h3{
+    text-align: center;
+    color: green;
+
+}
+
+
+
+#storiyan .stories:hover{
+cursor: pointer;
+}
+
+#cards .viewstory{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: none;
+    
+}
+#cards .viewstory .bar{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+}
+
+.viewstory .storyimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+#storiyan .stories{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+ 
+    border: 2px solid red;
+    display: inline-block;
+    margin-left: 2px;
+
+
+    
+}
+#storiyan .stories img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+
+
